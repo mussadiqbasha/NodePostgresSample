@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS public."Product"
+(
+    "Id" integer NOT NULL DEFAULT nextval('"Product_Id_seq"'::regclass),
+    title character varying COLLATE pg_catalog."default",
+    description character varying COLLATE pg_catalog."default",
+    picture character varying COLLATE pg_catalog."default",
+    price bigint,
+    quantity bigint,
+    CONSTRAINT "Product_pkey" PRIMARY KEY ("Id")
+)
